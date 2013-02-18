@@ -93,8 +93,7 @@ p { margin-bottom: 25px; line-height: 1.4em; }
 }
 @media print {
 	.content { width: auto; }
-	#form-action,
-	#footer { display: none; }
+	form { display: none; }
 
 	a:after {
 		content: " - ( " attr(href) " )";
