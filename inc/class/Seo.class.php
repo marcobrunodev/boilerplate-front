@@ -7,7 +7,10 @@ class Seo {
 	private static $url = 'DOMINIO_DO_SITE.com.br';
 	
 	public static function metas() {
-		return self::pg( get_body_class() );
+		$self = $_SERVER['PHP_SELF'];
+		$p = explode('/', $self);
+		
+		return self::pg( end( $p ) );
 	}
 
 	public static function getUrl() {
@@ -21,9 +24,9 @@ class Seo {
 	private static function pg( $pg ) {
 		switch( $pg )
 		{				
-			case 'interna':
+			case '404.html':
 				$arr['desc'] = 'Bla bla ' . self::$desc_default;
-				$arr['title'] = 'Bla bla - ';
+				$arr['title'] = 'Bla bla - ' . self::$title;
 				$arr['canonical'] = self::getUrl() . '/interna.html';
 				break;
 				
