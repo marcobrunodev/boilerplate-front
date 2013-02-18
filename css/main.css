@@ -7,15 +7,9 @@ input, select, textarea { font: normal 20px Tahoma, sans-serif; color: #444; }
 
 body { min-width: 300px; background: #fff; }
 
-h1, h2, h3, h4, h5, h6 { 
-	font-family: Tahoma, sans-serif; font-weight: normal;
-	line-height: 1em;
-	margin-bottom: 15px;
-}
-h1 { font-size: 40px; }
+h1, h2, h3, h4, h5, h6 { line-height: 1em; margin-bottom: 15px; }
 
-.purple { color: #732a80; }
-.product-name { font-weight: bold; font-style: italic; }
+
 
 a { text-decoration: none; }
 a:hover { text-decoration: underline; }
